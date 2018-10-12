@@ -1,0 +1,69 @@
+<header class="login_page_header header_fixed up_z_index">
+
+  <div class="call_center_mobile desktop_hide">
+    <p>Контакт-центр: 0 800 751031</p>
+  </div>
+
+  <div class="content">
+    <div class="mobile_header desktop_hide">
+
+      <button class="cmn-toggle-switch cmn-toggle-switch__htx">
+        <span></span>
+      </button>
+
+    </div>
+
+    <a routerLink="/" class="logo"><img src="https://uplata.ua/front/index/img/logo.svg" alt="Сервис онлайн-платежей Uplata" title="Сервис uplata.ua"></a>
+
+    <div class="right_side_header_content">
+      <div class="left_side mobile_hide">
+        <div class="all_services all_services_not_auth" id="all_services">
+          <div class="services_wrapper">
+
+            <div routerLink="/categories/popolnit-mobilnyy" class="inner_services_wrapper">
+              <p>Все услуги</p>
+              <img src="/assets/imgs/chevron-white-down.svg" alt="">
+            </div>
+
+          </div>
+        </div>
+
+        <ul class="link_list">
+          <li *ngFor="let link of links">
+            <a routerLink="{{link.path}}">{{link.name}}</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="right_side">
+        <div class="call_center_element mobile_hide">
+          <p>Контакт-центр: 0 800 751031</p>
+        </div>
+        <button (click)="openSignup()" class="registration mobile_hide">регистрация</button>
+        <button (click)="openLogin()" class="enter_in_account mobile_hide">вход</button>
+        <button class="enter_in_account mobile_version_enter_in_account desktop_hide">вход</button>
+        <div class="languages mobile_hide">
+          <div class="dropdown">
+            <span class="old">
+              <select name="languages_select" id="languages_select" class="" style="display:none;">
+                <option value="ru" selected="selected">Ru</option>
+                <option value="ua">Ua</option>
+              </select>
+            </span>
+            <span class="selected">Ru</span>
+            <span class="carat"></span>
+            <div style="display:none;">
+              <ul>
+                <li class="active">Ru</li>
+                <li>Ua</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<app-login  *ngIf="dialogLogin"  [close]="openLogin(false)"></app-login>
+<app-signup *ngIf="dialogSignup" [close]="openSignup(false)"></app-signup>

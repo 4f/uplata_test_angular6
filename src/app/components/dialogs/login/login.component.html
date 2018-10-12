@@ -1,0 +1,40 @@
+<div class="substrate_black_on_index_page show" id="substrate_black_on_index_page"></div>
+<div class="main_content start_page_body login_element show" id="login_page_body">
+    <div class="login_form form_element">
+        <div class="form_header mobile_hide">
+            <span class="mobile_hide">Вход</span>
+            <button class="close" data-operation="close-login" (click)="close()"></button>
+        </div>
+        <form action="#" name="main_login_form" id="main_login_form" class="main_login_form" data-form="login">
+            <div class="input_wrapper">
+                <input name="user_email" class="user_email" id="user_email_login" type="text" maxlength="50" placeholder="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,50}$" required="required" autocomplete="off">
+                <div class="valid_element_indicator"></div>
+                <div class="user_info_error exist_email">
+                    <p>Вход<a href="#">Указанный email еще не зарегистрирован.</a></p>
+                    <span></span>
+                </div>
+                <div class="user_info_error wrong_written_email" data-hint="">
+                    <p>Email введен неверно, проверьте правильность ввода.</p>
+                    <span></span>
+                </div>
+            </div>
+            <div class="input_wrapper">
+
+                <input data-mobile-disable="" name="user_password" class="user_password" id="user_password_login" type="password" placeholder="Пароль" required="required" autocomplete="off" readonly="" onfocus="$(this).removeAttr('readonly');" onblur="$(this).attr('readonly', 'readonly');">
+                
+                <div class="valid_element_indicator"></div>
+                <span class="show_password"></span>
+                <div class="user_info_error error_password" data-hint="">
+                    <p>Зарегистрироваться?</p>
+                    <span></span>
+                </div>
+                <div class="user_info_error blocked_account" data-hint="">
+                    <p>Вы опять ввели неверный пароль. Ваш аккаунт будет разблокирован через: <span class="time"></span> минут</p>
+                    <span></span>
+                </div>
+            </div>
+            <a href="#">Забыли пароль?</a>
+            <input type="submit" value="войти" class="enter_button wrong_email wrong_password" id="enter_button" data-submit="login">
+        </form>
+    </div>
+</div>

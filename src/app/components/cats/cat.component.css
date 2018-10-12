@@ -1,0 +1,2708 @@
+input[name="fake_password_for_chrome"] {
+  opacity: 0;
+  position: absolute;
+  height: 0 !important;
+  width: 0 !important;
+  padding: 0;
+}
+
+.right {
+  border-color: #b5b6ba !important;
+}
+
+.error {
+  border-color: red !important;
+}
+
+.services_page {
+  margin-bottom: 52px;
+  min-height: calc(100% - 152px);
+  padding-top: 100px
+}
+
+.services_page .main_content {
+  background: #fff none repeat scroll 0 0;
+  display: flex;
+  box-shadow: 0 2px 8px 0 rgba(181, 182, 186, .5);
+  min-height: 720px
+}
+
+.services_page .main_content .services_list {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 2px 0 8px 0 rgba(181, 182, 186, .16);
+  min-height: 70vh;
+  min-width: 370px;
+  position: relative;
+  width: calc(100% - 800px);
+  z-index: 1
+}
+
+.services_page .main_content .services_list .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.services_page .main_content .services_list .tabs .tab_transfer,
+.services_page .main_content .services_list .tabs .tab_payments {
+  width: 50%
+}
+
+.services_page .main_content .services_list .tabs .tab_header a {
+  color: #fff;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  width: 100%
+}
+
+.services_page .main_content .services_list .tabs .tab_header {
+  background: #4f5467 none repeat scroll 0 0;
+  color: #fff;
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%
+}
+
+body .services_page .main_content .services_list .tabs .show_tab_content {
+  display: block;
+  flex-direction: column
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content:after {
+  left: 75%
+}
+
+.services_page .main_content .services_list .tabs .transfer_tab_content:after {
+  left: 25%
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content:after,
+.services_page .main_content .services_list .tabs .transfer_tab_content:after {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 8px;
+  margin-left: -8px
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content,
+.services_page .main_content .services_list .tabs .transfer_tab_content {
+  display: none;
+  width: 100%;
+  padding: 0 20px;
+  position: relative
+}
+
+.services_page .main_content .services_list .tabs .active {
+  background: #3a3f52;
+  color: #fd8247
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  border-bottom: 1px solid #f4f6f8;
+  cursor: pointer
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content a {
+  align-items: center;
+  color: #242424;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none
+}
+
+.services_page .main_content .services_list .tabs .active a {
+  color: #fd8247
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(1) .tab_item_content_icon {
+  background-position: -1px -1px
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(2) .tab_item_content_icon {
+  background-position: -42px -1px
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(3) .tab_item_content_icon {
+  background-position: -81px -1px
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(4) .tab_item_content_icon {
+  background-position: -121px -1px
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(5) .tab_item_content_icon {
+  background-position: -161px -1px
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(6) .tab_item_content_icon {
+  background-position: -201px 0
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(7) .tab_item_content_icon {
+  background-position: -241px -1px
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(8) .tab_item_content_icon {
+  background-position: -281px 0
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(9) .tab_item_content_icon {
+  background-position: -320px 0
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(10) .tab_item_content_icon {
+  background-position: -361px 0
+}
+
+.services_page .main_content .services_list .tabs .payments_tab_content .tab_item_content:nth-child(11) .tab_item_content_icon {
+  background-position: -401px -1px
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content .tab_item_content_icon {
+  border: 1px solid #72778A;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0) url(/assets/imgs/cats/sprite-ic-payment.svg) no-repeat scroll 0 0
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content:hover .tab_item_content_icon {
+  border: 1px solid #FD8247
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content:hover .tab_item_name a {
+  color: #FD8247
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content.active {
+  color: #fd8247;
+  background: none
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content.active .tab_item_content_icon {
+  border: 1px solid #FD8247
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content.active .tab_item_content_icon img {
+  left: 0 !important
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content .tab_item_content_icon {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content .tab_item_content_icon img {
+  left: -40px;
+  position: absolute;
+  width: 80px;
+  height: 40px
+}
+
+.services_page .main_content .services_list .tabs .tab_item_content .tab_item_content_icon img:hover {
+  left: 0
+}
+
+.payments_wrapper iframe {
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background: #fbfbfc none repeat scroll 0 0
+}
+
+.payments_wrapper iframe html {
+  background: #fbfbfc
+}
+
+#transfer {
+  margin-bottom: 52px
+}
+
+#transfer .payments_wrapper {
+  min-height: 791px;
+  position: relative;
+  width: 100%;
+  background: #fbfbfc none repeat scroll 0 0;
+  overflow: hidden;
+}
+
+#transfer .payments_wrapper iframe {
+  height: 100%;
+}
+
+#transfer .transfer_tab_content .tab_item_content:nth-child(1) .tab_item_content_icon {
+  background: url(/front/index/img/transfers/sprite-ic-transfer-c-2-c.svg)
+}
+
+.autocomplete-suggestions {
+  z-index: 1;
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #f4f6f8;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 10px 0 rgba(79, 84, 103, .2);
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  line-height: 36px;
+  position: absolute;
+  width: 100%;
+  padding: 0 15px
+}
+
+.autocomplete-suggestions a {
+  line-height: normal;
+  margin: 0;
+  line-height: 40px;
+  color: #242424;
+  text-decoration: none
+}
+
+.autocomplete-suggestion {
+  padding-left: 15px
+}
+
+.autocomplete-suggestion:hover {
+  background-color: #f4f6f8
+}
+
+.services_content,
+.payment_form {
+  width: 100%
+}
+
+.filter_elements_wrapper {
+  background: none !important;
+  box-shadow: none !important;
+  height: 42px !important;
+  margin: 20px auto 0;
+  justify-content: flex-end;
+  padding-right: 20px
+}
+
+.services_content_header {
+  padding: 0 20px
+}
+
+.services_content_header h1 {
+  color: #4f5467;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.1px
+}
+
+.services_content_header h1:first-letter {
+  text-transform: uppercase
+}
+
+.filter_elements_wrapper .search:after,
+.services_content_header .search:after {
+  right: 37px
+}
+
+.filter_elements_wrapper .search input,
+.services_content_header .search input {
+  background: rgba(0, 0, 0, 0) url(/front/index/img/ic-search-light.svg) no-repeat scroll 302px center;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  height: 40px;
+  max-width: 330px;
+  padding: 0 15px;
+  width: 100%;
+  font-size: 14px
+}
+
+.filter_elements_wrapper .search .inner_tpl_search_form {
+  position: relative;
+  height: 40px
+}
+
+.filter_elements_wrapper .search .inner_tpl_search_form #tpl_search {
+  background: none;
+  padding-right: 40px
+}
+
+/* .filter_elements_wrapper .search .inner_tpl_search_form .tpl_search_submit {
+    background: none;
+    top: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0) url(/front/index/img/ic-search-light.svg) no-repeat scroll center center;
+    border: none;
+    padding: 0;
+    right: 0
+} */
+
+.filter_elements_wrapper .search .inner_tpl_search_form .search_button_submit {
+  top: 0;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0) url(/front/index/img/ic-search-light.svg) no-repeat scroll center center;
+  border: none;
+  padding: 0;
+  right: 0
+}
+
+
+.services_content {
+  background: #fbfbfc none repeat scroll 0 0;
+  height: 100%;
+  max-height: 790px
+}
+
+.services_content .services_content_header,
+.services_content .filter_elements_wrapper,
+.payments_content_header {
+  align-items: center;
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 2px 8px 0 rgba(181, 182, 186, .16);
+  display: flex;
+  height: 60px;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1
+}
+
+.services_content .filter_elements_wrapper span:first-child,
+.services_content .services_content_header span:first-child,
+.filter_elements_wrapper span:first-child {
+  color: #b5b6ba;
+  text-transform: uppercase;
+  padding-left: 20px
+}
+
+.services_content .services_content_header .dropdown,
+.services_content .filter_elements_wrapper .dropdown {
+  height: 40px;
+  width: 100%;
+  margin: 0 20px;
+  border: 1px solid #e7e7e7;
+  max-width: 330px
+}
+
+.services_content .services_content_header .dropdown,
+.services_content .filter_elements_wrapper .dropdown ul {
+  overflow: auto
+}
+
+.services_content .services_content_header .dropdown,
+.services_content .filter_elements_wrapper .dropdown ul .active {
+  display: none
+}
+
+.services_content .services_content_header .dropdown:hover,
+.services_content .filter_elements_wrapper .dropdown:hover {
+  box-shadow: none
+}
+
+.services_content .services_content_header .dropdown,
+.services_content .filter_elements_wrapper .dropdown .carat {
+  margin-top: 0
+}
+
+.services_content .services_content_header .dropdown,
+.services_content .filter_elements_wrapper .dropdown .carat+div {
+  max-height: 400px
+}
+
+.services_content .filter_elements_wrapper .dropdown:after,
+.services_content .services_content_header .dropdown:after,
+.services_content_header .search:after {
+  background: #e7e7e7 none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 20px;
+  position: absolute;
+  right: 34px;
+  top: 10px;
+  width: 1px
+}
+
+.services_content .filter_elements_wrapper .search,
+.services_content .services_content_header .search {
+  max-width: 330px;
+  width: 100%;
+  position: relative
+}
+
+.services_content .service_item_wrapper {
+  background: #fbfbfc none repeat scroll 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 585px;
+  justify-content: space-around;
+  padding: 0 20px;
+  position: relative;
+  overflow: auto;
+}
+
+.services_content .service_item_wrapper .service_item_inner_wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100%;
+  overflow: auto;
+  justify-content: space-around
+}
+
+.services_content .service_item_wrapper .service_item_inner_wrapper .additional_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  width: 100%
+}
+
+.services_content .service_item_wrapper .service_item_inner_wrapper .additional_wrapper .search_no_result {
+  width: 100%;
+  text-align: center;
+}
+
+.services_content .service_content_item {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #f4f6f8;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(231, 231, 231, .6);
+  height: 180px;
+  margin: 20px 7px 0 10px;
+  padding: 10px;
+  width: 130px;
+  text-decoration: none;
+  color: #242424;
+  overflow: hidden;
+  transition: all .1s ease-in;
+}
+
+.services_content .service_content_item:hover {
+  box-shadow: 0 0 10px 0 rgba(253, 130, 71, .6);
+  border: solid 1px #f4f6f8
+}
+
+.services_content .service_content_item .service_icon {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  min-height: 110px;
+  text-align: center;
+  width: 100%;
+  border: solid 1px rgba(226, 231, 235, .6)
+}
+
+.services_content .service_content_item .service_icon img {
+  height: auto;
+  max-height: 95px;
+  max-width: 95px;
+  width: 100%;
+}
+
+.services_content .service_content_item .service_name {
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  height: 55px;
+  justify-content: center;
+  margin-top: 2px;
+  overflow: hidden;
+  text-align: center
+}
+
+.services_content .service_content_item .service_name p {
+  word-wrap: break-word;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  text-align: center;
+  width: 100%;
+}
+
+.services_content .transfer_footer {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1
+}
+
+.services_content .transfer_footer .item img {
+  margin-right: 10px
+}
+
+.services_content .transfer_footer .item .friends {
+  color: #656565;
+  font-size: 12px;
+  width: 358px
+}
+
+.services_content .transfer_footer .item .friends span {
+  color: #242424;
+  margin: 0
+}
+
+.services_content .transfer_footer .item .friends a {
+  color: #fd8247
+}
+
+.payments_content_header {
+  width: 100%;
+  position: relative
+}
+
+.payments_content_header .back {
+  align-items: center;
+  border-color: #fd8247;
+  border-radius: 2px;
+  border-style: solid solid solid none;
+  border-width: 1px 1px 1px medium;
+  color: #fd8247;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: OpenSansSemiBold;
+  height: 30px;
+  justify-content: center;
+  margin-left: 44px;
+  position: relative;
+  text-transform: uppercase;
+  width: 80px
+}
+
+.payments_content_header .back .inner_sq {
+  border-color: #fd8247 -moz-use-text-color -moz-use-text-color #fd8247;
+  border-radius: 2px;
+  border-style: solid none none solid;
+  border-width: 1px 0 0 1px;
+  height: 22px;
+  left: -10px;
+  position: absolute;
+  top: 3px;
+  transform: rotate(-44deg);
+  width: 22px
+}
+
+.payments_content_header .form_name {
+  font-size: 18px;
+  color: #4f5467;
+  margin-left: 20px
+}
+
+.payment_form {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative
+}
+
+.payment_form .payments_content_body {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%
+}
+
+.payment_form .payments_content_body .payment_logo {
+  align-items: center;
+  display: flex;
+  height: 180px;
+  margin: 30px auto 10px;
+  width: 180px
+}
+
+.payment_form .payments_content_body .payment_logo img {
+  width: 100%
+}
+
+.payment_form .payments_content_body h2 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: OpenSansSemiBold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px
+}
+
+.payment_form .payments_content_body .payment_main_form {
+  width: 100%;
+  text-align: center;
+  max-width: 330px;
+  margin: 0 auto
+}
+
+
+.payment_form .payments_content_body .payment_main_form .input_wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  height: 40px
+}
+
+.payment_form .payments_content_body .payment_main_form .input_wrapper input {
+  height: 40px;
+  width: calc(100% - 30px);
+  max-width: 330px;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 0 15px;
+  float: left;
+  font-size: 14px
+}
+
+.payment_form .payments_content_body .payment_main_form .input_wrapper input:last-child {
+  margin: 0
+}
+
+.payment_form .payments_content_body .payment_main_form .submit_payments {
+  background: #fd8247 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 4px;
+  color: #fff;
+  float: right;
+  height: 40px;
+  margin-right: 30px;
+  text-transform: uppercase;
+  width: 160px;
+  font-weight: 600;
+  font-family: OpenSansSemiBold
+}
+
+.payments_content_footer {
+  align-items: center;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 80px;
+  padding: 0 20px 0 40px;
+  position: absolute;
+  width: 100%;
+  background: #fbfbfc none repeat scroll 0 0
+}
+
+.payments_content_footer .white_plug {
+  width: 100%;
+  position: absolute;
+  height: 15px;
+  background: #fff
+}
+
+.payments_content_footer .item img {
+  margin-right: 20px
+}
+
+.payments_content_footer .item img:last-child {
+  position: relative;
+  top: -3px
+}
+
+.payments_content_footer .item {
+  width: 50%
+}
+
+.payments_content_footer .item:first-child {
+  text-align: left
+}
+
+.payments_content_footer .item p {
+  color: #656565;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0
+}
+
+.payments_content_footer .item p a {
+  color: #fd8247
+}
+
+.payments_content_footer .item p span {
+  color: #fd8247;
+  cursor: help
+}
+
+.payments_content_footer .item .phone_info {
+  background: #fff none repeat scroll 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  max-width: 405px;
+  padding: 15px;
+  position: absolute;
+  top: -80px;
+  box-shadow: 0 2px 10px 0 rgba(79, 84, 103, .2);
+  display: none
+}
+
+.transfer_content_header {
+  align-items: center;
+  box-shadow: 0 2px 8px 0 rgba(181, 182, 186, .16);
+  display: flex;
+  height: 60px;
+  position: relative;
+  width: 100%
+}
+
+.transfer_content_header .back {
+  align-items: center;
+  border-color: #fd8247;
+  border-radius: 2px;
+  border-style: solid solid solid none;
+  border-width: 1px 1px 1px medium;
+  color: #fd8247;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: OpenSansSemiBold;
+  height: 30px;
+  justify-content: center;
+  margin-left: 44px;
+  position: relative;
+  text-transform: uppercase;
+  width: 80px
+}
+
+.transfer_content_header .back .inner_sq {
+  border-color: #fd8247 -moz-use-text-color -moz-use-text-color #fd8247;
+  border-radius: 2px;
+  border-style: solid none none solid;
+  border-width: 1px 0 0 1px;
+  height: 22px;
+  left: -10px;
+  position: absolute;
+  top: 3px;
+  transform: rotate(-44deg);
+  width: 22px
+}
+
+.transfer_content_header .back span:first-child {
+  padding: 0
+}
+
+.transfer_content_header .form_name {
+  font-size: 18px;
+  color: #4f5467;
+  margin-left: 20px
+}
+
+.transfer_content_body {
+  width: 100%;
+  margin: 0 auto
+}
+
+.transfer_content_body .user_card {
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+  min-height: 350px;
+  position: relative
+}
+
+.transfer_content_body .user_card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 30px 0 20px;
+  padding-left: 15px;
+  text-align: left
+}
+
+.transfer_content_body .user_card .main_card {
+  border-radius: 10px;
+  width: 100%;
+  height: 160px;
+  position: relative;
+  background: url(/front/index/img/card-sender.svg);
+  color: #fff
+}
+
+.transfer_content_body .user_card .main_card .card_number,
+.transfer_content_body .user_card .main_card .card_duration,
+.transfer_content_body .user_card .main_card .card_duratio,
+.transfer_content_body .user_card .main_card .card_cvv,
+.cards .card_image .card_number,
+.cards .card_image .card_duration,
+.cards .card_image .card_duratio,
+.cards .card_image .card_cvv {
+  position: absolute
+}
+
+.transfer_content_body .user_card .main_card .card_number,
+.cards .card_image .card_number {
+  font-size: 18px;
+  left: 3px;
+  top: 80px
+}
+
+.transfer_content_body .user_card .main_card .card_number p {
+  font-size: 18px;
+  left: 20px;
+  top: 80px;
+  letter-spacing: 3px
+}
+
+.transfer_content_body .user_card .main_card .card_number p,
+.cards .card_image .card_number p {
+  margin: 0
+}
+
+.transfer_content_body .user_card .main_card .card_duration,
+.cards .card_image .card_duration {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  left: 30px;
+  top: 114px
+}
+
+.transfer_content_body .user_card .main_card .card_duration p,
+.cards .card_image .card_duration p {
+  font-size: 12px;
+  margin: 0 10px 0 0
+}
+
+.transfer_content_body .user_card .main_card .card_cvv,
+.cards .card_image .card_cvv {
+  color: #4f5467;
+  right: 37px;
+  top: 76px
+}
+
+.transfer_content_body .user_card .user_edit_card {
+  position: relative
+}
+
+.transfer_content_body .user_card .user_edit_card .title_wrapper,
+.card_2_card .cards .item .title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 10px
+}
+
+.transfer_content_body .user_card .user_edit_card .title_wrapper p,
+.card_2_card .cards .item .title_wrapper p {
+  color: #b5b6ba;
+  font-size: 12px;
+  margin: 0 !important;
+  text-transform: uppercase;
+  position: relative
+}
+
+.transfer_content_body .user_card .user_edit_card .title_wrapper p:last-child {
+  right: 120px
+}
+
+.our_footer {
+  background-color: #fff;
+  bottom: 0;
+  box-shadow: 0 -2px 8px 0 rgba(181, 182, 186, .16);
+  display: none;
+  height: 140px;
+  padding: 0 42px 0 30px;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  z-index: 10;
+  max-width: 800px;
+  left: calc(50% - 400px);
+}
+
+.our_footer .notification_user {
+  width: 100%
+}
+
+.our_footer .span_item {
+  margin-right: 30px
+}
+
+.our_footer .send_user_notification {
+  display: flex;
+  height: 140px;
+  justify-content: space-between;
+  align-items: center
+}
+
+.our_footer .notification_user input {
+  display: block;
+  width: 270px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 1px #e7e7e7;
+  padding: 0 15px
+}
+
+.our_footer .notification_user .recipient_email {
+  margin-bottom: 20px
+}
+
+.our_footer .notification_user .textarea_item {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%
+}
+
+.our_footer .notification_user .textarea_item span {
+  color: #e85757
+}
+
+.our_footer .notification_user textarea {
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  height: 100px;
+  padding: 9px 15px;
+  resize: none;
+  width: 270px
+}
+
+.our_footer .counter {
+  color: #a7a8ad;
+  font-size: 12px;
+  display: block
+}
+
+.our_footer .counter_item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 20px 0
+}
+
+.our_footer .counter_item .wrong_phone,
+.our_footer .counter_item .wrong_email,
+.our_footer .counter_item .wrong_msg {
+  opacity: 0.5;
+}
+
+.our_footer .counter_item .save_info,
+.our_footer .counter_item .wrong_email,
+.our_footer .counter_item .wrong_msg,
+.our_footer .counter_item .wrong_phone {
+  background: #fff none repeat scroll 0 0 !important;
+  border: 1px solid #fd8247 !important;
+  border-radius: 4px;
+  color: #fd8247 !important;
+  height: 40px;
+  margin-bottom: 20px;
+  width: 110px
+}
+
+.checkbox-slider--b-flat {
+  position: relative;
+  height: 20px
+}
+
+.checkbox-slider--b-flat input {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0)
+}
+
+.checkbox-slider--b-flat input+span {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.checkbox-slider--b-flat input+span:before {
+  position: absolute;
+  left: 0;
+  display: inline-block
+}
+
+.checkbox-slider--b-flat input+span>h4 {
+  display: inline
+}
+
+.checkbox-slider--b-flat input+span {
+  padding-left: 40px
+}
+
+.checkbox-slider--b-flat input+span:before {
+  content: "";
+  height: 20px;
+  width: 40px;
+  background: #4f5467;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, .8);
+  transition: background .2s ease-out
+}
+
+.checkbox-slider--b-flat input+span:after {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background: #fff;
+  transition: margin-left .1s ease-in-out;
+  text-align: center;
+  font-weight: 700;
+  content: ""
+}
+
+.checkbox-slider--b-flat input:checked+span:after {
+  margin-left: 20px;
+  content: ""
+}
+
+.checkbox-slider--b-flat input:checked+span:before {
+  transition: background .2s ease-in
+}
+
+.checkbox-slider--b-flat input+span {
+  padding-left: 40px;
+  top: 0;
+  position: absolute
+}
+
+.checkbox-slider--b-flat input+span:before {
+  border-radius: 20px;
+  width: 40px
+}
+
+.checkbox-slider--b-flat input+span:after {
+  background: #fff;
+  content: "";
+  width: 16px;
+  border: solid transparent 2px;
+  background-clip: padding-box;
+  border-radius: 20px
+}
+
+.checkbox-slider--b-flat input:not(:checked)+span:after {
+  -webkit-animation: popOut ease-in .3s normal;
+  animation: popOut ease-in .3s normal
+}
+
+.checkbox-slider--b-flat input:checked+span:after {
+  content: "";
+  margin-left: 20px;
+  border: solid transparent 2px;
+  background-clip: padding-box;
+  -webkit-animation: popIn ease-in .3s normal;
+  animation: popIn ease-in .3s normal
+}
+
+.checkbox-slider--b-flat input:checked+span:before {
+  background: #fd8247
+}
+
+.checkbox-slider--b-flat.checkbox-slider-md input+span:before {
+  border-radius: 30px
+}
+
+.checkbox-slider--b-flat.checkbox-slider-md input+span:after {
+  border-radius: 30px
+}
+
+.checkbox-slider--b-flat.checkbox-slider-lg input+span:before {
+  border-radius: 40px
+}
+
+.checkbox-slider--b-flat.checkbox-slider-lg input+span:after {
+  border-radius: 40px
+}
+
+.checkbox-slider--b-flat input+span:before {
+  box-shadow: none
+}
+
+.msg_sended_information {
+  align-items: center;
+  bottom: 66px;
+  display: none;
+  height: 85px;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 5
+}
+
+.msg_sended_information p {
+  align-items: center;
+  color: #b5b6ba;
+  display: flex;
+  font-size: 12px;
+  height: 100%;
+  justify-content: center;
+  line-height: 1.67;
+  margin: 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+body .payments_tab_content.show_tab_content.desktop_hide.category_list_mobile_version.desktop_hide {
+  display: none
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+  .services_page .main_content .services_list .tabs .category_list_mobile_version:after {
+    display: none
+  }
+
+  .services_page .main_content .services_list {
+    min-width: 320px;
+    box-shadow: none;
+    width: 100%
+  }
+
+  body .payments_tab_content .show_tab_content .desktop_hide .category_list_mobile_version.desktop_hide {
+    display: none
+  }
+
+  body .services_page {
+    padding: 0
+  }
+
+  .mobile_service_list_title {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #4f5467;
+    box-shadow: 0 2px 8px 0 rgba(181, 182, 186, .08);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 56px auto 10px;
+    justify-content: center
+  }
+
+  .search.mobile_search {
+    margin: 0 auto 10px;
+    width: calc(100% - 30px)
+  }
+
+  .search:after,
+  .services_content_header .search:after {
+    right: 37px
+  }
+
+  .search.mobile_search input,
+  .services_content_header .search input {
+    background: rgba(0, 0, 0, 0) url(/front/index/img/ic-search-light.svg) no-repeat scroll 302px center;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    height: 40px;
+    max-width: 330px;
+    padding: 0 15px;
+    width: 100%;
+    font-size: 14px
+  }
+
+  .search.mobile_search .inner_tpl_search_form {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .search.mobile_search .inner_tpl_search_form #tpl_search {
+    background: #fff;
+    padding-right: 40px
+  }
+
+  .search.mobile_search .inner_tpl_search_form .tpl_search_submit {
+    background: none;
+    top: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0) url(/front/index/img/ic-search-light.svg) no-repeat scroll center center;
+    border: none;
+    padding: 0;
+    right: 0;
+  }
+
+  .location_wrapper {
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    margin-bottom: 10px
+  }
+
+  .location_wrapper .dropdown {
+    width: 100%
+  }
+
+  .c2c_success .sms_enter input {
+    width: 140px;
+  }
+
+  .desktop_hide {
+    display: flex;
+  }
+
+  .mobile_main_content {
+    padding-top: 57px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 526px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 526px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .mobile_card_transfer .second_step {
+    margin: 0 auto;
+  }
+
+  .mobile_main_content .modal_wrapper.tariffs_and_limits_element {
+    z-index: 50;
+  }
+
+  .mobile_main_content .tariffs_and_limits_element .title .bottom_border {
+    bottom: -20px;
+  }
+
+  /*BEGIN MOBILE CARD TRANSFER*/
+  .hide,
+  .mobile_hide {
+    display: none !important;
+  }
+
+  .desktop_hide {
+    display: flex !important;
+  }
+
+  .show {
+    display: flex !important;
+  }
+
+  .invalid_recipient_phone_number,
+  .invalid_recipient_email,
+  .invalid_recipient_message {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .invalid_sms_code,
+  .invalid_sended_amount,
+  .invalid_recipient_card_number,
+  .invalid_sender_phone,
+  .invalid_month,
+  .invalid_year,
+  .invalid_cvv,
+  .invalid_card_number {
+    background: rgba(253, 130, 71, 0.5) !important;
+    pointer-events: none;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .title {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f4f6f8;
+    font-family: OpenSansSemiBold;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #4f5467;
+    margin: 0 auto
+  }
+
+  .mobile_main_content .card_transfer_wrapper .title .helper {
+    right: -23.5px;
+  }
+
+  #mobile_card_transfer input[type="text"]:-webkit-autofill {
+    webkit-box-shadow: 0 0 0px 19px #edebff inset !important;
+    height: -webkit-fill-available;
+  }
+
+  .mobile_main_content .mobile_card_transfer .step_title {
+    font-family: OpenSansRegular;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: left;
+    color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper {
+    width: 296px;
+    position: relative;
+    z-index: 5;
+    height: 189px;
+    background: rgba(0, 0, 0, 0) url("/front/index/img/mobile_card_transfer_bg_from.svg") no-repeat scroll center center / 100% 100%;
+    margin: 0 auto 16px;
+    padding: 10px 0 0;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper p,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label span,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div span {
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div span,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label span {
+    margin: 0 0 10px 25px;
+    display: block;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label .inner_wrapper,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper {
+    width: 276px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: solid 1px rgba(181, 182, 186, 0.6);
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label .inner_wrapper input,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper input {
+    background: none;
+    border: none;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    line-height: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: OpenSansSemiBold;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #242424;
+    box-shadow: none !important;
+    position: relative;
+    z-index: 4;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label .inner_wrapper .user_card_select_list,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: none;
+    top: -1px;
+    right: 0;
+    z-index: 2;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label .inner_wrapper .user_card_select_list ul,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul {
+    position: absolute;
+    width: calc(100% + 236px);
+    top: 54px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(79, 84, 103, 0.2);
+    border: none;
+    left: -235px;
+    transition: all .1s ease-in-out;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label .inner_wrapper .user_card_select_list ul.open,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul.open {
+    overflow: auto;
+    border: solid 1px #f4f6f8;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul.open {
+    max-height: 320px;
+    overflow: visible;
+    border: solid 1px #f4f6f8;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label .inner_wrapper .user_card_select_list ul:after,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul:after {
+    background: url('/front/index/img/viollet_shevron.png');
+    width: 18px;
+    height: 9px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label .inner_wrapper .user_card_select_list ul li,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #f4f6f8;
+    cursor: pointer;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul li:nth-child(odd) {
+    background: rgb(244, 246, 248);
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul li div img {}
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul li div p {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #656565;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul li div span {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0;
+    color: #242424;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul li div:first-child {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul li div:first-child img {
+    width: 100%;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list ul li div:last-child {
+    margin-left: 5px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list .placeholder {
+    width: calc(100% + 195px);
+    height: 40px;
+    padding: 0 15px;
+    position: absolute;
+    left: -234px;
+    top: 1px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-family: OpenSansSemiBold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #818289;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list .carat {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper div .inner_wrapper .user_card_select_list:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    background-color: rgba(181, 182, 186, 0.6);
+    right: 40px;
+    top: 10px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label .inner_wrapper .valid_element_indicator {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper label {
+    width: 100%;
+    max-width: 276px;
+    height: 40px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper>div,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper>div {
+    width: 100%;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper {
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper {
+    width: 100%;
+    max-width: 141px;
+    padding-left: 10px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown {
+    height: 40px;
+    width: auto;
+    border: none;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown span {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.25;
+    text-align: left;
+    color: #242424;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown .selected {
+    width: 100%;
+    height: 100%;
+    padding-right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #818289;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown>div {
+    max-height: 130px;
+    width: 131px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .select_year_wrapper .dropdown>div {
+    left: -66px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown>div ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background: none !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown>div ul li {
+    width: 32px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 16px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.25;
+    text-align: left;
+    color: #242424;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown>div {
+    border-top: none !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .select_month_wrapper .dropdown {
+    border-top: 1px solid #b5b6ba;
+    border-right: none;
+    border-bottom: 1px solid #b5b6ba;
+    border-left: 1px solid #b5b6ba;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .select_month_wrapper .dropdown.open {
+    border-top: 1px solid #b5b6ba;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #b5b6ba;
+    border-radius: 4px 0 0 0 !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .select_year_wrapper .dropdown {
+    border-top: 1px solid #b5b6ba;
+    border-right: 1px solid #b5b6ba;
+    border-bottom: 1px solid #b5b6ba;
+    border-left: none;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .cvv_wrapper {
+    width: 100%;
+    max-width: 90px;
+    margin-right: 15px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .cvv_wrapper label input {
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: solid 1px rgba(181, 182, 186, 0.6);
+    padding-left: 15px;
+    box-shadow: none;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper>div {
+    height: 40px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper p {
+    margin: 0 0 10px 15px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper>div .select_month_wrapper,
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper>div .select_year_wrapper {
+    width: 50%;
+    position: relative;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper>div .select_month_wrapper .dropdown {
+    border-radius: 4px 0 0 4px;
+    position: relative;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .dropdown.open {
+    background: #fff !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper>div .select_month_wrapper .dropdown:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
+    border-right: solid 1px rgba(181, 182, 186, 0.6);
+    position: absolute;
+    top: 11px;
+    right: 0;
+  }
+
+  .mobile_main_content .mobile_card_transfer .bg_card_wrapper .select_date_and_cvv_wrapper .mobile_selected_wrapper>div .select_year_wrapper .dropdown {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .mobile_main_content .mobile_card_transfer .send_user_msg_checker {
+    pointer-events: all !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .send_user_msg_checker,
+  .mobile_main_content .mobile_card_transfer .save_user_card_checker {
+    padding: 0 15px;
+    margin: 0 auto 20px;
+    position: relative;
+    /*pointer-events: none;*/
+    background: none !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .send_user_msg_checker .inner_checker_wrapper,
+  .mobile_main_content .mobile_card_transfer .save_user_card_checker .inner_checker_wrapper {
+    width: 100%;
+    max-width: 326px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .mobile_main_content .mobile_card_transfer .send_user_msg_checker p {
+    margin-left: 50px !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .send_user_msg_checker p,
+  .mobile_main_content .mobile_card_transfer .save_user_card_checker p {
+    margin: 0 5px 0 10px;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: left;
+    color: rgb(58, 63, 82);
+  }
+
+  .mobile_main_content .mobile_card_transfer .save_user_card_checker p {
+    margin-left: 55px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .main_phone_number_wrapper {
+    width: 100%;
+    max-width: 326px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .mobile_main_content .mobile_card_transfer .enter_amount_send,
+  .mobile_main_content .mobile_card_transfer .your_phone_number_wrapper {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .mobile_main_content .mobile_card_transfer .enter_amount_send {
+    max-width: 326px;
+    margin: 0 auto;
+  }
+
+  .mobile_main_content .mobile_card_transfer .your_phone_number_wrapper {
+    width: 100%;
+    max-width: 326px;
+    margin: 0 auto;
+  }
+
+  .mobile_main_content .mobile_card_transfer .enter_amount_send>div,
+  .mobile_main_content .mobile_card_transfer .your_phone_number_wrapper>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: left;
+    color: #b5b6ba;
+    text-transform: uppercase;
+  }
+
+  .mobile_main_content .mobile_card_transfer .enter_amount_send>div span,
+  .mobile_main_content .mobile_card_transfer .your_phone_number_wrapper>div span {
+    padding-left: 17px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .enter_amount_send .sended_amount {
+    padding: 0 15px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .enter_amount_send .sended_amount,
+  .mobile_main_content .mobile_card_transfer .your_phone_number_wrapper .enter_you_phone_number {
+    width: 100%;
+    max-width: 270px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(181, 182, 186);
+  }
+
+  .mobile_main_content .mobile_card_transfer .your_phone_number_wrapper .enter_you_phone_number {
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    text-align: left;
+    color: rgb(36, 36, 36);
+  }
+
+  .mobile_main_content .mobile_card_transfer .enter_amount_send .valid_element_indicator,
+  .mobile_main_content .mobile_card_transfer .your_phone_number_wrapper .valid_element_indicator {
+    top: 40px;
+    left: 290px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .button_wrapper {
+    margin: 30px auto 40px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .button_wrapper .next_button {
+    width: 196px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: rgb(253, 130, 71);
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.14;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .mobile_footer .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .mobile_footer .item img {
+    width: 80px;
+    height: 48px;
+    position: relative;
+  }
+
+  .mobile_main_content .mobile_card_transfer .second_step .bg_card_wrapper {
+    padding-top: 65px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 8px 0 rgba(181, 182, 186, 0.16);
+    height: 0;
+    overflow: hidden;
+    transition: all .2s ease;
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient.show {
+    height: 335px !important;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient input {
+    padding: 0 15px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient>div {
+    max-width: 326px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient .input_wrapper {
+    width: 100%;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient .input_wrapper input {
+    width: 296px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(231, 231, 231);
+    margin-bottom: 15px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient .input_wrapper textarea {
+    width: 296px;
+    height: 140px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(231, 231, 231);
+    padding: 10px;
+    resize: none;
+    font-family: OpenSansRegular !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient .save_button_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px 15px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .inform_the_recipient .save_button_wrapper .save_button {
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #fd8247;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fd8247;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    font-family: OpenSansSemiBold;
+  }
+
+  .mobile_main_content .mobile_card_transfer .msg_saved {
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .mobile_main_content .mobile_card_transfer .msg_saved p {
+    align-items: center;
+    color: #b5b6ba;
+    display: flex;
+    font-size: 12px;
+    height: auto;
+    justify-content: center;
+    line-height: 1.67;
+    margin: 0;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .mobile_main_content .mobile_card_transfer .commission_info_block {
+    margin: 15px auto;
+    padding: 0 15px;
+    position: relative;
+    max-width: 326px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .commission_info_block .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: left;
+    color: #656565;
+    height: 30px;
+    position: relative;
+  }
+
+  .mobile_main_content .mobile_card_transfer .commission_info_block .item span {
+    font-family: OpenSansSemiBold;
+    color: #fd8247;
+    margin-left: 5px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .commission_info_block .helper_info.show_helper {
+    display: block !important;
+  }
+
+  .mobile_main_content .mobile_card_transfer .commission_info_block .helper_info {
+    display: none;
+    top: -94px;
+    height: 85px;
+    left: 17px;
+    right: auto;
+    width: 266px;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #242424;
+    z-index: 5;
+    position: absolute;
+    background: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 2px 8px 0 rgba(181, 182, 186, .5);
+  }
+
+  .mobile_main_content .mobile_card_transfer .commission_info_block .helper_info:after {
+    background: rgba(0, 0, 0, 0) url("/front/index/img/triangle.png") repeat scroll 0 0;
+    bottom: -8px;
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    right: 102px;
+    width: 14px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .commission_info_block .helper_info.show_helper {
+    display: flex;
+  }
+
+  .mobile_main_content .mobile_card_transfer .second_step>.button_wrapper {
+    margin: 0 auto 40px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step {}
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content {
+    flex-direction: column;
+    width: 296px;
+    min-height: 414px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 6px 0 rgba(36, 36, 36, 0.3);
+    margin: 13px auto 40px;
+    min-height: auto;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .title {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dashed #fd8247;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .title p {
+    font-size: 16px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.5;
+    text-align: center;
+    color: #4f5467;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .title p span {
+    color: #fd8247;
+    font-weight: bold;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+    position: relative;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item.total {
+    padding: 20px 15px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item.total p {
+    text-transform: none;
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.71;
+    text-align: left;
+    color: #242424;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item.total span {
+    font-size: 24px;
+    line-height: 1;
+    text-align: right;
+    color: #242424;
+    font-family: OpenSansRegular;
+    letter-spacing: normal;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item.phone_sms {
+    flex-direction: column;
+    padding: 0 15px 20px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item.phone_sms div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item.phone_sms div:first-child p {
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.71;
+    text-align: left;
+    color: #656565;
+    text-transform: none;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item.phone_sms input {
+    width: 196px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e7e7e7;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #242424;
+    box-shadow: none;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .button_wrapper {
+    margin: 0 auto 20px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .button_wrapper button,
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .button_wrapper input {
+    width: 128px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #fd8247;
+    text-transform: uppercase;
+    color: white;
+    background: #fd8247;
+    border: 1px solid #fd8247;
+    font-family: OpenSansSemiBold;
+    padding: 0 8px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .button_wrapper button {
+    background: none;
+    color: #fd8247
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item p {
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: left;
+    color: #b5b6ba;
+    text-transform: uppercase;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item span {
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.71;
+    letter-spacing: 0.5px;
+    text-align: right;
+    color: #242424;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item .helper_info {
+    top: -60px;
+    bottom: auto;
+    left: 40px;
+    right: 45px;
+    position: absolute;
+    display: none;
+    background: white;
+    z-index: 5;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 2px 8px 0 rgba(181, 182, 186, .5);
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item .helper_info p {
+    font-family: OpenSansRegular;
+    color: #242424;
+    font-size: 12px;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item .helper_info.show_element {
+    display: block;
+  }
+
+  .mobile_main_content .mobile_card_transfer .third_step .main_content .item .helper_info:after {
+    background: rgba(0, 0, 0, 0) url("/front/index/img/triangle.png") repeat scroll 0 0;
+    bottom: -8px;
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    right: 38px;
+    width: 14px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content {
+    flex-direction: column;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content {
+    width: 300px;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(231, 231, 231, 0.6);
+    border: solid 1px #f4f6f8;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 35px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content h2 {
+    font-size: 18px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.56;
+    text-align: center;
+    color: rgb(79, 84, 103);
+    margin: 20px auto 10px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .success_text {
+    margin-bottom: 10px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .success_text p {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: #242424;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .success_text span {
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #242424;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 15px;
+    min-height: 40px;
+    border-bottom: 1px solid #f4f6f8
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .item:last-child {
+    border-bottom: 1px dashed #fd8247;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .item p {
+    font-size: 12px;
+    line-height: 2;
+    text-align: left;
+    color: #b5b6ba;
+    text-transform: uppercase;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .item span {
+    font-size: 14px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.71;
+    text-align: right;
+    color: #242424;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .item.commission span {
+    color: #fd8247;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .link_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .link_wrapper a {
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: left;
+    color: #fd8247;
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .link_wrapper a:first-child {
+    margin-bottom: 15px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .link_wrapper a span {
+    margin-left: 10px;
+    display: block;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .congratulations_content .zigzag_bg {
+    background: rgba(255, 255, 255, 0) url("/front/index/img/receipt-zigzag.svg") no-repeat scroll center bottom;
+    position: absolute;
+    bottom: -16px;
+    top: auto;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .user_actions {
+    padding: 0 15px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .user_actions p {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: #242424;
+    font-family: OpenSansRegular;
+    letter-spacing: -0.1px;
+    margin: 20px auto;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .user_actions .button_wrapper {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .user_actions .button_wrapper button {
+    width: 196px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #fd8247;
+    color: #fd8247;
+    background: none;
+    font-family: OpenSansSemiBold;
+    text-transform: uppercase;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .fourth_step .main_content .user_actions .button_wrapper .button_make_translation {
+    margin-bottom: 20px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item {
+    background: #fff;
+    padding: 20px 15px;
+    width: 100%;
+    position: relative;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .title {
+    width: 100%;
+    height: 48px;
+    max-width: 226px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.5;
+    text-align: center;
+    color: #4f5467;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .title p {
+    font-size: 16px;
+    font-family: OpenSansSemiBold;
+    line-height: 1.5;
+    text-align: center;
+    color: #4f5467;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .title .close_button {
+    top: 15px;
+    right: 15px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .item_body {}
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .item_body .sended_email {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: #242424;
+    margin-top: 5px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .item_body .orange_border {
+    margin: 20px auto 18px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .item_body .user_actions p {
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: #242424;
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .item_body .user_actions .button_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .item_body .user_actions .button_wrapper button {
+    width: 196px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #fd8247;
+    color: #fd8247;
+    background: none;
+    font-family: OpenSansSemiBold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .item_body .user_actions .button_wrapper button:last-child {
+    margin: 0;
+  }
+
+  .mobile_main_content .card_transfer_wrapper .modal_wrapper .item .item_body .user_actions .button_wrapper .no_thx {
+    border: none;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.43;
+    text-align: center;
+    color: #fd8247;
+    text-decoration: underline;
+    text-transform: none;
+  }
+
+  .mobile_main_content .modal_wrapper .title,
+  .mobile_main_content .modal_wrapper .inner_content .inner_content {
+    width: 100%;
+    max-width: 430px;
+  }
+
+  .mobile_main_content .modal_wrapper.modal_no_save_card .inner_content {
+    max-height: 345px;
+    overflow: auto;
+  }
+
+  .mobile_main_content .helper_for_phone_number {
+    position: absolute;
+    width: 20px;
+    left: 200px;
+    z-index: 1;
+  }
+
+  .mobile_main_content .helper_for_phone_number .helper_info {
+    position: absolute;
+    right: -65px;
+    top: -40px;
+    bottom: auto;
+    left: auto;
+    width: 238px;
+    font-size: 12px;
+    height: auto;
+    padding: 5px;
+    line-height: 1.3;
+    display: none;
+    box-shadow: 0 2px 10px 0 rgba(79, 84, 103, 0.2);
+    background: #fff;
+    border-radius: 4px;
+  }
+
+  .mobile_main_content .helper_for_phone_number .helper_info:after {
+    right: 62px;
+    background: rgba(255, 255, 255, 1) url(/front/index/img/helper_angle.png) no-repeat scroll 0 0;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 16px
+  }
+}
+
+
+
+
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+  /*BEGIN MOBILE PAYMENTS*/
+  /*    html body .services_page,
+      html body .services_page .main_content{
+          height: auto;
+      }*/
+
+  html body .services_page .payments_wrapper {
+    position: relative;
+    z-index: 5;
+    transition: all .2s ease;
+    height: auto;
+    overflow: auto;
+    display: none;
+    overflow: hidden;
+    margin-top: -110px;
+    min-height: auto;
+  }
+
+  .breadcrumbs li {
+    display: none;
+  }
+
+  .breadcrumbs li:last-child {
+    display: flex;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile_service_list_title {
+    position: relative;
+  }
+
+  html body .mobile_version .payments_wrapper {
+    display: block;
+    min-height: 540px;
+    max-width: 460px;
+    margin: -57px auto 0;
+  }
+
+  html body .mobile_version .services_list {
+    display: none;
+  }
+
+  html body .services_content {
+    max-height: none;
+    height: auto;
+  }
+
+  html body .services_content .service_item_wrapper {
+    height: 100%;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+  }
+
+  .services_content .location_select_wrapper {
+    width: calc(100% - 30px);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 0;
+    max-width: 330px;
+  }
+
+  .services_content .location_select_wrapper .dropdown {
+    width: 100%;
+  }
+
+  .services_content .filter_elements_wrapper span:first-child {
+    display: none;
+  }
+
+  .services_content .filter_elements_wrapper {
+    flex-direction: column;
+    height: auto !important;
+    min-height: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    margin: 0;
+    background: #fbfbfc !important;
+  }
+
+  .services_content .service_item_wrapper {
+    background: #fff;
+  }
+
+  .services_content .service_item_wrapper .service_item_inner_wrapper {
+    overflow: hidden;
+  }
+
+  .services_content .service_item_wrapper .service_item_inner_wrapper .additional_wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .services_content .service_content_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 60px;
+    border-bottom: 1px solid #f4f6f8;
+    width: 100%;
+    height: 100%;
+    max-height: 60px;
+    margin: 0 auto;
+    padding: 0;
+    background: #fff;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .services_content .service_content_item div {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+
+  .services_content .service_content_item .service_icon {
+    max-width: 40px;
+    min-height: 40px;
+    margin-right: 15px;
+  }
+
+  .services_content .service_content_item .service_name {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .services_content .service_content_item .service_name p {
+    text-align: left;
+    width: 100%;
+  }
+
+  .services_page,
+  .payments_wrapper,
+  .services_page .main_content {
+    min-height: auto;
+  }
+
+  .services_page .main_content {
+    background: #fbfbfc none repeat scroll 0 0;
+  }
+
+  /*    .services_page .main_content{
+          max-height: 530px
+      }*/
+  .search_no_result {
+    width: 100%;
+    height: calc(100vh - 234px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*END MOBILE PAYMENTS*/
+}

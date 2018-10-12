@@ -1,0 +1,34 @@
+
+<footer class="not_for_index">
+
+  <div class="colored_border"></div>
+
+  <div class="social_and_links">
+    <div class="inner_content">
+
+      <div class="footer_menu">
+        <ul>
+          <li *ngFor="let link of links">
+            <a routerLink="{{link.path}}">{{link.name}}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="social_wrapper">
+        <a href="https://www.facebook.com/uplata.ua/" class="fb_white social_slider_links" target="_blank"></a>
+        <a href="https://www.linkedin.com/company/uplata.com" class="in_white social_slider_links" target="_blank"></a>
+        <a href="https://www.instagram.com/uplata.ua/" class="instagram" target="_blank"></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sub_footer_line">
+    <div class="call_center_element">
+      <a href="/"><img src="https://uplata.ua/front/index/img/uplata-logo-footer.svg" alt="Сервис онлайн платежей uplata.com.ua" title="Сервис uplata.com.ua"></a>
+      <p>Контакт-центр: 0 800 751031</p>
+    </div>
+    <p>2018 © uplata.ua</p>
+  </div>
+
+</footer>

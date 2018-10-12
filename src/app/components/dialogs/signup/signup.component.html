@@ -1,0 +1,94 @@
+<div class="substrate_black_on_index_page show" id="substrate_black_on_index_page"></div>
+<div class="main_content start_page_body registration_element modal_registration_window show" id="registration_page_body">
+    <div class="login_form form_element">
+        <div class="form_header mobile_hide">
+            <span class="mobile_hide">Регистрация</span>
+            <button class="close" (click)="close()"></button>
+        </div>
+        
+
+        <div class="form_reg_main_wrapper">
+            <form action="#" name="registration_form" id="registration_form" class="main_login_form registration_form main_registration_form">
+                <div class="input_wrapper">
+                    <input type="text" class="fake_input" name="user_email" disabled="disabled" tabindex="-1">
+                    <input name="user_email" class="user_email reg_required_input_check_edge main_reg_user_email_input" id="user_email" maxlength="50" type="text" placeholder="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,50}$" required="required" autocomplete="off" value="">
+                    <div class="valid_element_indicator"></div>
+                    <div class="user_info_error user_email_exist_login">
+                        <p>Этот email уже зарегистрирован. Если помните пароль <a href="#" class="enter_on_site">войдите на сайт</a> Если забыли - <a href="#" class="reset_you_password">нажмите сюда.</a></p>
+                        <span></span>
+                    </div>
+                    <div class="user_info_error wrong_written_email">
+                        <p>Email введен неверно, проверьте правильность ввода.</p>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="input_wrapper">
+                    <input name="user_name" class="user_name reg_required_input_check_edge" id="user_name" maxlength="30" type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁёЇїҐґЄєІі0-9-!#$%&amp;'()* ,./:;<=>?@[\\\]_`'{|}~]{2,50}" required="required" autocomplete="off" value="">
+                    <div class="valid_element_indicator"></div>
+                </div>
+
+                <div class="input_wrapper">
+                    <input name="user_phone" class="user_phone reg_required_input_check_edge" id="user_phone" type="text" placeholder="Номер телефона" pattern="[0-9/ /()+-]{23,}" autocomplete="off" maxlength="23">
+                    <div class="valid_element_indicator"></div>
+                    <div class="user_info_error existing_user_phone">
+                        <p>Указанный номер уже закреплен за одним из наших Клиентов. Пожалуйста, укажите другой номер телефона.  <a class="phone_error_login" href="#">Войти на сайт</a> или воспользоваться сервисом <a class="phone_error_reset_pass" href="#">сброс пароля</a></p>
+                        <span></span>
+                    </div>
+                </div>
+
+
+                <div class="input_wrapper">
+                        <input type="password" name="user_password" class="fake_input" tabindex="-1" disabled="disabled">
+                        <input name="user_password" class="user_password reg_required_input_check_edge" id="user_password" type="password" placeholder="Пароль" required="required" autocomplete="off">
+                        <div class="valid_element_indicator"></div>
+                    <span class="show_password"></span>
+                    <div class="user_info_error little_password">
+                        <p>Пароль должен состоять не менее чем из 8 букв, цифр, спецсимволов</p>
+                        <span></span>
+                    </div>
+                    <div class="user_info_error common">
+                        <p>Распространенный пароль или слово</p>
+                        <span></span>
+                    </div>
+                    <div class="user_info_error easy_password">
+                        <p>Пароль должен состоять не менее чем из 8 букв, цифр, спецсимволов</p>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="input_wrapper user_repeat_password_element">
+                    <input name="user_repeat_password" class="user_repeat_password reg_required_input_check_edge" id="user_repeat_password" type="password" placeholder="Повторите пароль" required="required" autocomplete="off">
+                    <div class="valid_element_indicator"></div>
+                    <span class="show_password"></span>
+                    <div class="user_info_error">
+                        <p>Пароли не совпадают</p>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="input_wrapper">
+                    <input name="promo_code" class="promo_code" id="promo_code" type="text" placeholder="Промокод, если он есть" pattern="[A-Za-zА-яа-я]{1,50}" autocomplete="off" value="">
+                    <span class="helper"></span>
+                    <div class="valid_element_indicator"></div>
+                    <div class="user_info_error expired">
+                        <p>К сожалению, срок действия данного промокода уже закончился :(</p>
+                        <span></span>
+                    </div>
+                    <div class="user_info_error not_exist">
+                        <p>Нам очень жаль, но такого промокода не существует. Проверьте, правильно ли вы его написали</p>
+                        <span></span>
+                    </div>
+                    <div class="helper_info">
+                        <p>Введите ваш инвайткод из цифр 0-9 и букв (латиница A..Z, a..z) длиной до 10 символов</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="user_agreement">
+                    <p>Создавая аккаунт, я принимаю <a href="/oferta" target="_blank">условия Публичного договора</a></p>
+                </div>
+                <input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ" disabled="disabled" class="reg_button obscene_name wrong_user_reg_password not_same_passwords user_mail_invalid error_user_name exist_user_phone not_valid no_valid_captcha" id="main_enter_button">
+            </form>
+        </div>
+    </div>
+</div>

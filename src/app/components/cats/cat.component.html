@@ -1,0 +1,108 @@
+<div class="services_page" id="services_page">
+  <div class="main_content">
+
+    <div class="services_list">
+      <div class="tabs">
+        <div class="tab_transfer mobile_hide">
+          <div class="tab_header">
+            <a href="/card2card">Переводы</a>
+          </div>
+        </div>
+        <div class="tab_payments mobile_hide">
+          <div class="tab_header active">
+            <a href="/oplata-uslug">Платежи</a>
+          </div>
+        </div>
+
+        <div class="payments_tab_content show_tab_content mobile_hide" id="payments_tab_content" style="display:block">
+
+          <div *ngFor="let cat of categories" class="tab_item_content" [ngClass]="{active: cat.id === category.id}" >
+            <div class="tab_item_name">
+              <a href="{{cat.path}}" id="{{cat.id}}">
+                <div class="tab_item_content_icon"></div>{{cat.name}}
+              </a>
+            </div>
+          </div>
+
+        </div>
+          
+      </div>
+    </div>
+    <div class="payments_wrapper" id="payments_wrapper_id">
+
+
+      <div class="services_content">
+        <div class="services_content_header">
+          <ol itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <a itemprop="item" href="https://uplata.ua/">
+                <span itemprop="name">Главная</span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+
+            <li><img src="https://uplata.ua/front/index/img/triangle.svg" alt=""></li>
+
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+              <h1 itemprop="name">{{category.name}}</h1>
+              <meta itemprop="position" content="2">
+            </li>
+          </ol>
+        </div>
+
+        <div class="filter_elements_wrapper mobile_hide">
+          <span>регион</span>
+
+          <div class="search">
+            <form action="/search" name="inner_tpl_search_form" class="inner_tpl_search_form">
+              <input type="text" class="search_input" id="tpl_search" name="search_input" placeholder="Поиск"
+                autocomplete="off" value="">
+              <input type="submit" value="" name="search_button_submit" class="search_button_submit">
+            </form>
+            <div class="autocomplete-suggestions"></div>
+          </div>
+        </div>
+
+        <div class="service_item_wrapper">
+          <div class="service_item_inner_wrapper">
+            <div class="additional_wrapper" *ngIf="category">
+
+              <a
+                *ngFor="let method of category.methods"
+                
+                href="{{method.path}}"
+                class="service_content_item"
+              >
+                <div class="service_icon">
+                  <img src="{{method.icon}}" alt="{{method.alt}}" title="{{method.title}}">
+                </div>
+                <div class="service_name">
+                  <p>{{method.name}}</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payments_content_footer mobile_hide">
+        <div class="item">
+          <img src="https://uplata.ua/front/index/img/paysystem-logo-master-card-securecode.png" alt="MasterCard SecureCode | сервис uplata.ua"
+            title="MasterCard SecureCode">
+          <img src="https://uplata.ua/front/index/img/verified-by-visa-logo.png" alt="Verified by Visa | сервис uplata.ua"
+            title="Verified by Visa">
+        </div>
+        <div class="item">
+          <p> <span></span> </p>
+          <div class="phone_info">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
