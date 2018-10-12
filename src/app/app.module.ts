@@ -13,8 +13,9 @@ import { TarifComponent }       from './components/pages/tarif/tarif.component';
 import { BezopasnostComponent } from './components/pages/bezopasnost/bezopasnost.component';
 import { LegalComponent }       from './components/pages/legal/legal.component';
 import { CatComponent }         from './components/cats/cat.component';
-import { LoginComponent } from './components/dialogs/login/login.component';
-import { SignupComponent } from './components/dialogs/signup/signup.component';
+import { LoginComponent }       from './components/dialogs/login/login.component';
+import { SignupComponent }      from './components/dialogs/signup/signup.component';
+import { Page404Component }     from './components/pages/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SignupComponent } from './components/dialogs/signup/signup.component';
     LegalComponent,
     CatComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
