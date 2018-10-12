@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>308C7EC3-75A4-4EE1-AF4C-871F5038AA6A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="70" height="70" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="price" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="uplata_pricing" transform="translate(-305.000000, -343.000000)">
+            <g id="Group" transform="translate(285.000000, 100.000000)">
+                <g id="ic_pricing_payment" transform="translate(20.000000, 243.000000)">
+                    <polygon id="Fill-3" fill="#E7D1D4" points="47.25 24.5 17.5 24.5 17.5 49 22.75 49"></polygon>
+                    <polygon id="Fill-5" fill="#D4B0B6" points="47.25 24.5 47.25 24.5 52.5 24.5"></polygon>
+                    <path d="M22.75,49 L50.5018235,49 C51.6053859,49 52.5,48.0989758 52.5,46.9950622 L52.5,26.5049378 C52.5,25.3976412 51.6094091,24.5 50.5002235,24.5 L47.25,24.5 L22.75,49 Z" id="Fill-7" fill="#D4B0B6"></path>
+                    <path d="M17.5,49 L50.4925388,49 C51.601229,49 52.5,48.0989758 52.5,46.9950622 L52.5,26.5049378 C52.5,25.3976412 51.5996545,24.5 50.4925388,24.5 L17.5,24.5 L17.5,49 Z" id="Stroke-9" stroke="#73778A" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M43.75,24.500175 L17.5,24.500175 L41.851605,16.3845968 C42.9000596,16.0351818 43.75,16.6551914 43.75,17.7589503 L43.75,24.500175 Z" id="Fill-11" fill="#B08B91"></path>
+                    <path d="M43.75,24.500175 L17.5,24.500175 L41.851605,16.3845968 C42.9000596,16.0351818 43.75,16.6551914 43.75,17.7589503 L43.75,24.500175 Z" id="Stroke-12" stroke="#73778A" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M52.5,32.375175 L47.25,32.375175 C45.31625,32.375175 43.75,33.941425 43.75,35.875175 L43.75,37.625175 C43.75,39.558925 45.31625,41.125175 47.25,41.125175 L52.5,41.125175 L52.5,32.375175 Z" id="Fill-13" fill="#B08B91"></path>
+                    <path d="M52.5,32.375175 L47.25,32.375175 C45.31625,32.375175 43.75,33.941425 43.75,35.875175 L43.75,37.625175 C43.75,39.558925 45.31625,41.125175 47.25,41.125175 L52.5,41.125175 L52.5,32.375175 Z" id="Stroke-14" stroke="#73778A" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M49.875,36.750175 C49.875,35.784175 49.091,35.000175 48.125,35.000175 C47.159,35.000175 46.375,35.784175 46.375,36.750175 C46.375,37.716175 47.159,38.500175 48.125,38.500175 C49.091,38.500175 49.875,37.716175 49.875,36.750175" id="Fill-15" fill="#E3B572"></path>
+                    <use id="Oval" stroke="#727789" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
